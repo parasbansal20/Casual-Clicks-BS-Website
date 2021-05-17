@@ -1,0 +1,26 @@
+#main-content {
+  position: relative; }
+  #main-content .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.8); }
+  #main-content .col-md-4:hover .dark-overlay {
+    opacity: 0.4; }
+  #main-content a {
+    text-decoration: none; }
+    #main-content a h3 {
+      font-size: 20px;
+      padding-top: 10px; }
+    #main-content a img {
+      height: 400px;
+      object-fit: cover;
+      width: 100%; }
+
+#footer a {
+  color: #343a40;
+  font-size: 20px; }
