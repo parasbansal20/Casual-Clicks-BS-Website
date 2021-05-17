@@ -1,0 +1,47 @@
+$dark-overlay: rgba(0,0,0,0.8);
+$dark-color: #343a40;
+
+#main-content{
+
+  position: relative;
+
+  .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $dark-overlay;
+  }
+
+
+  .col-md-4:hover .dark-overlay {
+  opacity: 0.4;
+  }
+
+  a{
+    text-decoration: none;
+
+    h3{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    img{
+      height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+}
+
+#footer{
+  a{
+    color: $dark-color;
+    font-size: 20px;
+
+  }
+}
