@@ -1,6 +1,7 @@
-$dark-overlay: rgba(0,0,0,0.8);
+$dark-overlay: rgba(0,0,0,0.1);
 $dark-color: #343a40;
-
+$light-overlay: rgba(0,0,0,0.1);
+$light-color: #d3d3d3;
 #main-content{
 
   position: relative;
@@ -15,9 +16,22 @@ $dark-color: #343a40;
   transition: .5s ease;
   background-color: $dark-overlay;
   }
+  .light-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $light-overlay;
+  }
 
 
   .col-md-4:hover .dark-overlay {
+  opacity: 0.4;
+  }
+  .col-md-4:hover .light-overlay {
   opacity: 0.4;
   }
 
@@ -40,7 +54,7 @@ $dark-color: #343a40;
 
 #footer{
   a{
-    color: $dark-color;
+    color: white;
     font-size: 20px;
 
   }
